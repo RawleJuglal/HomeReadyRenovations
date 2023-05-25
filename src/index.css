@@ -1,69 +1,233 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@400;700&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  fill: currentColor;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  --primary-font: "Inter", sans-serif;
+  --concert-font: "Concert One", cursive;
+  --ebony: #576748;
+  --sunglow: #facf59;
+  --verdigris: #3ea8a7;
+  --lapisLazuli: #3d5f98;
+  --trueBlue: #416aa4;
+  --black: #161616;
+  --white: #fff;
+  --grey: #c2c2c2;
+  --twelvePX: 0.75rem;
+  --twentyPX: 1.25rem;
+}
+
+.XXpt {
+  font-size: var(--twentyPX);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  color: var(--black);
+}
+.white {
+  color: var(--white);
+}
+.grey {
+  color: var(--grey);
+}
+
+.center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.flex {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-align-center {
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.link {
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.link.mobile {
+  font-family: var(--primary-font);
+  color: var(--black);
+  text-decoration: none;
 }
+
+.link.mobile:hover {
+  color: var(--ebony);
+  font-size: 700;
+  text-decoration: underline;
+}
+
+.link.desktop {
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link.desktop:hover {
+  color: var(--black);
+  font-size: 700;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: blue;
+}
+
+/* img:not(.social-icon){
+    width:32px;
+} */
